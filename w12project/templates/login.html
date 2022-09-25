@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+input {
+  margin: 5px;
+}
+</style>
+
+</head>
+<body style="background-color:lightblue;">
+<h3 style="text-align:center;">Login</h3>
+        <div class="box">
+            <form action="login" method="post" style="margin: auto; width: 220px;">
+                {% csrf_token %}
+                <fieldset>
+
+                    <input type="text" name="username" placeholder="username"><br><br>
+                    <input type="password" name="password" placeholder="password"><br><br>
+                    <input type="submit" value="SUBMIT">
+                </fieldset>
+
+            </form>
+
+        </div>
+</body>
+</html>
+
+
